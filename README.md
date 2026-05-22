@@ -47,8 +47,8 @@ Al iniciar la aplicación por primera vez, el sistema autogenerará la base de d
 (src/database/secure_users.db) y creará un usuario administrador de Nivel 1.
 
 Para evaluar la aplicación, inicie sesión con las siguientes credenciales:
-**Usuario:** admin
-**Contraseña:** Admin123!
+* **Usuario:** admin
+* **Contraseña:** Admin123!
 
 Una vez dentro de la Bóveda Criptográfica, seleccione cualquier archivo local para cifrarlo. El sistema 
 generará un nuevo archivo con la extensión .enc garantizando que es 100% confiable e inviolable. 
