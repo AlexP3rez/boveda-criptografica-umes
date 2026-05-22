@@ -1,0 +1,15 @@
+# Archivos temporales de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales (si usó uno)
+venv/
+env/
+
+# Bases de datos locales (¡Seguridad vital!)
+src/database/*.db
+*.db
+
+# Archivos cifrados de prueba
+*.enc
