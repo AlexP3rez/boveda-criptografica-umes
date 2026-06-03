@@ -9,7 +9,7 @@ ctk.set_default_color_theme("green")  # Estilo tecnológico/seguridad
 class MainWindow:
     def __init__(self, root, controller):
         self.root = root
-        self.root.title("Bóveda Digital Inviolable - UMES")
+        self.root.title("Proyecto final TI")
         self.root.geometry("550x450")
         self.controller = controller
 
@@ -29,7 +29,7 @@ class MainWindow:
                                            show="*", width=250, height=40, corner_radius=10)
         self.entry_password.pack(pady=10)
 
-        self.btn_login = ctk.CTkButton(self.frame_login, text="INGRESAR A LA BÓVEDA", 
+        self.btn_login = ctk.CTkButton(self.frame_login, text="INGRESAR", 
                                         command=self.ejecutar_login, width=250, height=45, 
                                         corner_radius=10, font=("Urbanist", 14, "bold"))
         self.btn_login.pack(pady=30)
@@ -51,17 +51,17 @@ class MainWindow:
         self.frame_login.pack_forget()
         self.frame_main.pack(pady=40, padx=40, fill="both", expand=True)
 
-        ctk.CTkLabel(self.frame_main, text="BÓVEDA CRIPTOGRÁFICA", 
+        ctk.CTkLabel(self.frame_main, text="Cifrado y Descifrado de Archivos", 
                      font=("Urbanist", 22, "bold"), text_color="#DEFF9A").pack(pady=(20, 30))
 
         # Botón Cifrar
-        self.btn_cifrar = ctk.CTkButton(self.frame_main, text="🔒 CIFRAR ARCHIVO", 
+        self.btn_cifrar = ctk.CTkButton(self.frame_main, text=" CIFRAR ARCHIVO", 
                                         command=lambda: self.seleccionar_archivo("cifrar"),
                                         width=300, height=50, corner_radius=15, fg_color="#2E4D2E")
         self.btn_cifrar.pack(pady=10)
 
         # Botón Descifrar
-        self.btn_descifrar = ctk.CTkButton(self.frame_main, text="🔓 DESCIFRAR ARCHIVO", 
+        self.btn_descifrar = ctk.CTkButton(self.frame_main, text=" DESCIFRAR ARCHIVO", 
                                            command=lambda: self.seleccionar_archivo("descifrar"),
                                            width=300, height=50, corner_radius=15, fg_color="#1F2937")
         self.btn_descifrar.pack(pady=10)
