@@ -38,6 +38,7 @@ Se recomienda utilizar un entorno virtual. Para instalar el motor criptográfico
     pip install -r requirements.txt
     ```
 3. **Ejecutar la aplicación:**
+    Antes de ejecutar crar el directorio /src/database/
     ```bash
     python main.py
     ```
